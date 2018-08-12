@@ -1,3 +1,20 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: url('back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+#main {
+    margin-top: 55vh;
+}
+
+.fa, .fab {
+    color: #000;
+}
+
+.fa:hover, .fab:hover {
+    color: #fff;
+    text-decoration: none;
 }
