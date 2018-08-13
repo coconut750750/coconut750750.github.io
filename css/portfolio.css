@@ -1,0 +1,10 @@
+#main {
+    margin-top: 10vh;
+}
+
+.project-img {
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    height: 35vh;
+}

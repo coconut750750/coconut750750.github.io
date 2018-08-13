@@ -4,17 +4,20 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
+    background-size: cover;
+
 }
 
-#main {
-    margin-top: 55vh;
+#name {
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+    font-size: 32px;
 }
 
 .fa, .fab {
-    color: #000;
+    color: #fff;
 }
 
 .fa:hover, .fab:hover {
-    color: #fff;
+    color: #49b6cd;
     text-decoration: none;
 }
