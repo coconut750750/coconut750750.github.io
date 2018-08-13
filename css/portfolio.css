@@ -1,10 +1,23 @@
 #main {
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 .project-img {
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
-    height: 35vh;
+}
+
+.btn-link {
+    padding: 0;
+}
+
+.no-a-style {
+    color: #212529;
+    text-decoration: none;
+}
+
+.no-a-style:hover, .no-a-style:focus {
+    color: #212529;
+    text-decoration: none;
 }

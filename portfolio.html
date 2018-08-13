@@ -19,28 +19,22 @@
 
 <body ng-app="portfolio">
     <div id="main" class="container-fluid" ng-controller="portfolio-controller">
-        <h3 id="title" class="col-2 text-right">Portfolio</h3>
+        <h3 id="name" class="text-center mb-4"><a href="index.html" class="no-a-style">Portfolio</a></h3>
+
         <div ng-repeat="project in projects">
             <div class="row mb-2">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <div class="horizontal card border-dark flex-md-row mb-4 shadow-md h-md-250">
-                        <div class="col-5 flex-auto d-block project-img h-300" style="background-image: url({{ project.img_src }});"></div>
-                        <div class="col-7 card-body">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="horizontal card border-dark mb-4 shadow-md flex-md-row">
+                        <img class="card-img-top vertical_img" src="{{ project.img_src }}"/>
+                        <div class="col card-body">
                             <h5 class="card-title mb-2">{{ project.name }}</h5>
                             <h6 class="card-subtitle mb-2 text-muted">{{ project.brief }}</h6>
                             <p class="card-subtitle mb-2 text-muted">{{ project.time_frame }}</p>
                             <p class="card-text">{{ project.description }}</p>
+                            <a href="{{ project.source }}" class="card-text btn btn-link" role="button">Source</a>
                         </div>
-                    </div>
-                    <div class="vertical card border-dark mb-4 shadow-md">
-                        <img class="card-img-top" src="{{ project.img_src }}"/>
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">{{ project.name }}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">{{ project.brief }}</h6>
-                            <p class="card-subtitle mb-2 text-muted">{{ project.time_frame }}</p>
-                            <p class="card-text">{{ project.description }}</p>
-                        </div>
+                        <div class="col-6 flex-auto project-img horizontal_img" style="background-image: url({{ project.img_src }});"></div>
                     </div>
                 </div>
             </div>
