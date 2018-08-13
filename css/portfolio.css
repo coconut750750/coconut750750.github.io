@@ -12,12 +12,13 @@
     padding: 0;
 }
 
-.no-a-style {
+.no-a-style,
+.no-a-style:hover,
+.no-a-style:focus {
     color: #212529;
     text-decoration: none;
 }
 
-.no-a-style:hover, .no-a-style:focus {
-    color: #212529;
-    text-decoration: none;
+.card-body a.btn-link {
+    margin-right: 5%;
 }

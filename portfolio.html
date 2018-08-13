@@ -26,15 +26,16 @@
                 <div class="col-1"></div>
                 <div class="col-10">
                     <div class="horizontal card border-dark mb-4 shadow-md flex-md-row">
-                        <img class="card-img-top vertical_img" src="{{ project.img_src }}"/>
+                        <img ng-if="project.img_src" class="card-img-top vertical_img" src="{{ project.img_src }}"/>
                         <div class="col card-body">
                             <h5 class="card-title mb-2">{{ project.name }}</h5>
                             <h6 class="card-subtitle mb-2 text-muted">{{ project.brief }}</h6>
                             <p class="card-subtitle mb-2 text-muted">{{ project.time_frame }}</p>
                             <p class="card-text">{{ project.description }}</p>
-                            <a href="{{ project.source }}" class="card-text btn btn-link" role="button">Source</a>
+                            <a ng-if="project.source" href="{{ project.source }}" class="card-text btn btn-link" role="button">Source</a>
+                            <a ng-if="project.link" href="{{ project.link }}" class="card-text btn btn-link" role="button">Link</a>
                         </div>
-                        <div class="col-6 flex-auto project-img horizontal_img" style="background-image: url({{ project.img_src }});"></div>
+                        <div ng-if="project.img_src" class="col-6 flex-auto project-img horizontal_img" style="background-image: url({{ project.img_src }});"></div>
                     </div>
                 </div>
             </div>

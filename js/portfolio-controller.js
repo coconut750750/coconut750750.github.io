@@ -21,12 +21,20 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
     }, {
         name: 'Shapify',
         brief: 'Genetic Algorithm Recreating Images with polygons',
-        description: 'Given any image, Shapify uses the structure of genetic algorithms, seed, weed, breed, and mutate.\
+        description: 'Given any image, Shapify uses the structure of genetic algorithms, seed, weed, breed, and mutate\
                       to produce an image with only polygons that looks similar to the input. It takes several thousand\
                       generations to reach an image that it vaguely similar.',
         time_frame: 'Jul 2018 - now',
         img_src: '',
         source: 'https://github.com/coconut750750/shapify'
+    }, {
+        name: 'Empower You',
+        brief: 'Website Design',
+        description: 'Designed a website for an education and career counseling group that target internation\
+                      Chinese students. Took advantage of Wordpress\'s support for blogs and added multilingual support. ',
+        time_frame: 'Jan 2018',
+        img_src: 'img/empoweryou.jpg',
+        link: 'http://www.51empoweryou.com'
     }, {
         name: 'Mailbox',
         brief: 'Real-time Messaging App',
@@ -43,6 +51,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
                       subtle features such as ball shadows and screen shakes.',
         time_frame: 'Nov 2016 - Nov 2017',
         img_src: 'img/pong.png',
-        source: 'https://github.com/coconut750750/Pong'
+        source: 'https://github.com/coconut750750/Pong',
+        link: 'https://play.google.com/store/apps/details?id=com.brandon.pong'
     }];
 }]);

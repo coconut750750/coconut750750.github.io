@@ -3,5 +3,16 @@ body {
 }
 
 #main {
-    margin-top: 50vh;
+    position: absolute;
+    bottom: 30vh;
+}
+
+#bio a {
+    color: white;
+    text-decoration: none;
+}
+
+#bio a:hover {
+    color: #1a7cbb;
+    text-decoration: none;
 }
