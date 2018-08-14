@@ -4,7 +4,7 @@ body {
 
 #main {
     position: absolute;
-    bottom: 30vh;
+    top: 40vh;
 }
 
 #bio a {
@@ -13,6 +13,6 @@ body {
 }
 
 #bio a:hover {
-    color: #1a7cbb;
+    color: #e17027;
     text-decoration: none;
 }
