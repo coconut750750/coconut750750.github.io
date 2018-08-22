@@ -30,7 +30,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
     }, {
         name: 'Empower You',
         brief: 'Website Design',
-        description: 'Designed a website for an education and career counseling group that target internation\
+        description: 'Designed a website for an education and career counseling group that target international\
                       Chinese students. Took advantage of Wordpress\'s support for blogs and added multilingual support. ',
         time_frame: 'Jan 2018',
         img_src: 'img/empoweryou.jpg',

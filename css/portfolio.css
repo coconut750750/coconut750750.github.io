@@ -7,6 +7,10 @@
 
 }
 
+.card {
+    overflow: hidden;
+}
+
 .project-img {
     background-repeat: no-repeat;
     background-position: center; 
