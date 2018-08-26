@@ -10,15 +10,6 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
         img_src: 'img/heist.png',
         source: 'https://github.com/coconut750750/Heist'
     }, {
-        name: 'PokAI',
-        brief: 'Card Playing AI',
-        description: 'Written in Python, PokAI is an AI that plays the Chinese card game Landlard. With\
-                      the help of Monte Carlo simulations, PokAI can determine the best move. Compared to\
-                      a fixed-strategy bot, PokAI can win about 60% more games with the same starting hand.',
-        time_frame: 'Feb 2018 - now',
-        img_src: 'img/pokai.png',
-        source: 'https://github.com/coconut750750/pokai'
-    }, {
         name: 'Shapify',
         brief: 'Genetic Algorithm Recreating Images with polygons',
         description: 'Given any image, Shapify uses the structure of genetic algorithms, seed, weed, breed, and mutate\
@@ -27,6 +18,23 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
         time_frame: 'Jul 2018 - now',
         img_src: '',
         source: 'https://github.com/coconut750750/shapify'
+    }, {
+        name: 'Out of Ammo',
+        brief: 'Infinite Runner',
+        description: 'Simple geometric infinite runner where you only have one bullet that bounces around the map.\
+                      Implements object pooling and procedural generation to create the map.',
+        time_frame: 'Aug 2018',
+        img_src: 'img/outofammo.png',
+        link: 'http://out-of-ammo.herokuapp.com/'
+    }, {
+        name: 'PokAI',
+        brief: 'Card Playing AI',
+        description: 'Written in Python, PokAI is an AI that plays the Chinese card game Landlard. With\
+                      the help of Monte Carlo simulations, PokAI can determine the best move. Compared to\
+                      a fixed-strategy bot, PokAI can win about 60% more games with the same starting hand.',
+        time_frame: 'Feb 2018 - Jul 2018',
+        img_src: 'img/pokai.png',
+        source: 'https://github.com/coconut750750/pokai'
     }, {
         name: 'Empower You',
         brief: 'Website Design',
