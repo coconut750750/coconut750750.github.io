@@ -7,10 +7,6 @@
 
 }
 
-.card {
-    overflow: hidden;
-}
-
 .project-img {
     background-repeat: no-repeat;
     background-position: center; 
@@ -30,4 +26,36 @@
 
 .card-body a.btn-link {
     margin-right: 5%;
+}
+
+
+
+@media (min-width: 992px) {
+    .card {
+        overflow: hidden;
+        flex-direction: row!important;
+    }
+
+    .horizontal_img {
+        display: block;
+    }
+
+    .vertical_img {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .horizontal_img {
+        display: none;
+    }
+
+    .vertical_img {
+        display: block;
+    }
 }
