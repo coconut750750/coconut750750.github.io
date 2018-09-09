@@ -1,11 +1,11 @@
 body {
     font-family: 'Roboto', sans-serif;
-    -webkit-background: url('back.png') no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background: url('back.png') no-repeat center fixed;
-    -moz-background-size: cover;
-    background: url('back.png') no-repeat center fixed;
+    background-image: url('back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
     background-size: cover;
+    min-height: 100%;
 }
 
 #name {
