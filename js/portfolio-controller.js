@@ -1,6 +1,17 @@
 var app = angular.module("portfolio", []);
 app.controller('portfolio-controller', ['$scope', function($scope) {
-    $scope.projects = [{
+    $scope.projects = [
+    {
+        name: 'Waffle',
+        brief: 'ReactJS Web Application',
+        description: 'An application that helps indecisive users choose where to eat by ranking restaurants\
+                      in a customized competition loosely similar to an ordinary bracket-style tournament. Users\
+                      pick a restaurant between several pairs until a clear winner has been reached. Aims to gamify\
+                      the dread of picking a restaurant.',
+        time_frame: 'Aug 2018 - now',
+        img_src: 'img/waffle.png',
+        link: 'http://waaffle.herokuapp.com'
+    }, {
         name: 'Heist',
         brief: '2D Adventure Game in Unity',
         description: 'A top-down 8-bit adventure game where the objective is to successfully heist\
