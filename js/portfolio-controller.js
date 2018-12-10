@@ -9,7 +9,8 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
                       tempo of the music, which map to the features of the image, including the temperature and vibrance.',
         time_frame: 'Nov 2018',
         img_src: 'img/imusi.png',
-        source: 'https://github.com/choiboy98/imusi'
+        source: 'https://github.com/choiboy98/imusi',
+        link: 'https://imusi.herokuapp.com'
     }, {
         name: 'Waffle',
         brief: 'ReactJS Web Application',
