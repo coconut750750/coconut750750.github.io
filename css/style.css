@@ -20,6 +20,10 @@ body {
     font-size: 32px;
 }
 
+.header {
+    color: white;
+}
+
 .content-toggle {
     color: white;
     text-decoration: none;
