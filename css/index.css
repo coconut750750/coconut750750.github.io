@@ -1,10 +1,10 @@
-body {
-    color: white;
-}
-
-#main {
+#home-main {
     position: absolute;
     top: 35vh;
+}
+
+#bio {
+    color: white;
 }
 
 #bio a {
