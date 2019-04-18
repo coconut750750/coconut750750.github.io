@@ -23,7 +23,9 @@
     margin-right: 5%;
 }
 
-
+#portfolio-back {
+    font-size: 32px;
+}
 
 @media (min-width: 992px) {
     .card {
