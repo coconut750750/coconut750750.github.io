@@ -1,3 +1,11 @@
+var MIN_SIZE = 496;
+var class_pairs = null;
+var bio = null
+var bio_margin = null
+var name_elem = null
+var name_margin = null
+var links = null
+
 function show_portfolio() {
     toggle_content("portfolio-main", "home-main")
 }
@@ -11,22 +19,24 @@ function toggle_content(on, off) {
     document.getElementById(on).style.display = "";
 }
 
-var bio = document.getElementById("bio");
-var bio_margin = document.getElementById("bio-margin");
-var name_elem = document.getElementById("name");
-var name_margin = document.getElementById("name-margin");
-var links = document.getElementsByClassName("link");
+function setup() {
+    bio = document.getElementById("bio");
+    bio_margin = document.getElementById("bio-margin");
+    name_elem = document.getElementById("name");
+    name_margin = document.getElementById("name-margin");
+    links = document.getElementsByClassName("link");
 
-// element, desktop class, mobile class
-var class_pairs = [[bio, "col-5", "col-10"], 
-                   [bio, "mt-0", "mt-4"],
-                   [bio_margin, "col-6", "col-1"],
-                   [name_elem, "mr-5", "mr-0"],
-                   [name_elem, "col-3", "col-10"],
-                   [name_elem, "text-right", "text-center"],
-                   [name_margin, "col-3", "col-1"]];
+    // element, desktop class, mobile class
+    class_pairs = [[bio, "col-5", "col-10"], 
+                       [bio, "mt-0", "mt-4"],
+                       [bio_margin, "col-6", "col-1"],
+                       [name_elem, "mr-5", "mr-0"],
+                       [name_elem, "col-3", "col-10"],
+                       [name_elem, "text-right", "text-center"],
+                       [name_margin, "col-3", "col-1"]];
 
-var MIN_SIZE = 496;
+    adjust_main();
+}
 
 function adjust_main() {
     if (window.innerWidth <= MIN_SIZE) {
@@ -46,10 +56,10 @@ function adjust_main() {
     }
 }
 
-window.onload = adjust_main;
-window.onresize = adjust_main;
-
 function toggle_class(elem, on, off) {
     elem.classList.remove(off)
     elem.classList.add(on)
 }
+
+window.onload = setup;
+window.onresize = adjust_main;
