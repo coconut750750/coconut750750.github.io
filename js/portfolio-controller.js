@@ -20,7 +20,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
                       the dread of picking a restaurant.',
         time_frame: 'Aug 2018 - now',
         img_src: 'img/waffle.png',
-        link: 'http://waaffle.herokuapp.com'
+        link: 'https://waaffle.herokuapp.com'
     }, {
         name: 'Out of Ammo',
         brief: 'Infinite Runner',
@@ -28,7 +28,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
                       Implements object pooling and procedural generation to create the map.',
         time_frame: 'Aug 2018',
         img_src: 'img/outofammo.png',
-        link: 'http://out-of-ammo.herokuapp.com/'
+        link: 'https://out-of-ammo.herokuapp.com/'
     }, {
         name: 'Shapify',
         brief: 'Genetic Algorithm Recreating Images with polygons',
