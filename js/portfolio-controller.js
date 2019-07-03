@@ -6,7 +6,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
         brief: 'Music Recommendation',
         description: 'A Web and Mobile app that recommends music to users based on an uploaded image. The algorithm\
                       recommends music that have similar features to an image. Some features include the \'liveliness\' and\
-                      tempo of the music, which map to the features of the image, including the temperature and vibrance.',
+                      tempo of the music, which map to the temperature and vibrance of the image.',
         time_frame: 'Nov 2018',
         img_src: 'img/imusi.png',
         source: 'https://github.com/choiboy98/imusi',

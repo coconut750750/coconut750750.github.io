@@ -27,13 +27,13 @@ function setup() {
     links = document.getElementsByClassName("link");
 
     // element, desktop class, mobile class
-    class_pairs = [[bio, "col-5", "col-10"], 
+    class_pairs = [[bio_margin, "col-5", "col-1"],
+                   [bio, "col-5", "col-10"], 
                    [bio, "mt-0", "mt-4"],
-                   [bio_margin, "col-6", "col-1"],
+                   [name_margin, "col-2", "col-1"],
                    [name_elem, "mr-5", "mr-0"],
                    [name_elem, "col-3", "col-10"],
-                   [name_elem, "text-right", "text-center"],
-                   [name_margin, "col-3", "col-1"]];
+                   [name_elem, "text-right", "text-center"]];
 
     adjust_main();
 }
