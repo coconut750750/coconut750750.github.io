@@ -41,8 +41,8 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
     }, {
         name: 'PokAI',
         brief: 'Card Playing AI',
-        description: 'Written in Python, PokAI is an AI that plays the Chinese card game Landlard. With\
-                      the help of Monte Carlo simulations, PokAI can determine the best move. Compared to\
+        description: 'Written in Python, PokAI is an AI that plays the Chinese card game Landlard.\
+                      PokAI determines the best move by running Monte Carlo simularions. Compared to\
                       a fixed-strategy bot, PokAI can win about 60% more games with the same starting hand.',
         time_frame: 'Feb 2018 - Jul 2018',
         img_src: 'img/pokai.png',

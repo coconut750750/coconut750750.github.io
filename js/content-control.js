@@ -1,10 +1,11 @@
-var MIN_SIZE = 496;
+var MIN_SIZE = 696;
 var class_pairs = null;
 var bio = null
 var bio_margin = null
 var name_elem = null
 var name_margin = null
 var links = null
+var projects = null
 
 function show_portfolio() {
     toggle_content("portfolio-main", "home-main")
@@ -25,6 +26,7 @@ function setup() {
     name_elem = document.getElementById("name");
     name_margin = document.getElementById("name-margin");
     links = document.getElementsByClassName("link");
+    projects = document.getElementsByClassName("project");
 
     // element, desktop class, mobile class
     class_pairs = [[bio_margin, "col-5", "col-1"],
@@ -46,6 +48,9 @@ function adjust_main() {
         for (let item of links) {
             toggle_class(item, "col-2", "col-1");
         }
+        for (let project of projects) {
+            toggle_class(project, "col-12", "col-4")
+        }
     } else {
         for (let pair of class_pairs) {
             toggle_class(pair[0], pair[1], pair[2]);
@@ -53,12 +58,23 @@ function adjust_main() {
         for (let item of links) {
             toggle_class(item, "col-1", "col-2");
         }
+        for (let project of projects) {
+            toggle_class(project, "col-4", "col-12")
+        }
     }
 }
 
 function toggle_class(elem, on, off) {
     elem.classList.remove(off)
     elem.classList.add(on)
+}
+
+function rotateCard(container){
+    if(container.classList.contains('flipped')){
+        container.classList.remove('flipped')
+    } else {
+        container.classList.add('flipped')
+    }
 }
 
 window.onload = setup;

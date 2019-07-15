@@ -26,33 +26,3 @@
 #portfolio-back {
     font-size: 32px;
 }
-
-@media (min-width: 992px) {
-    .card {
-        overflow: hidden;
-        flex-direction: row!important;
-    }
-
-    .horizontal_img {
-        display: block;
-    }
-
-    .vertical_img {
-        display: none;
-    }
-}
-
-@media (max-width: 992px) {
-    .card {
-        overflow: hidden;
-        flex-direction: column;
-    }
-
-    .horizontal_img {
-        display: none;
-    }
-
-    .vertical_img {
-        display: block;
-    }
-}
