@@ -1,81 +1,69 @@
-var MIN_SIZE = 696;
-var class_pairs = null;
-var bio = null
-var bio_margin = null
-var name_elem = null
-var name_margin = null
-var links = null
-var projects = null
+var MIN_SIZE = 700;
+var MID_SIZE = 1000;
+var PROJECT_STAGGER = 25;
 
-function show_portfolio() {
-    toggle_content("portfolio-main", "home-main")
-}
-
-function show_home() {
-    toggle_content("home-main", "portfolio-main");
-}
-
-function toggle_content(on, off) {
-    document.getElementById(off).style.display = "none";
-    document.getElementById(on).style.display = "";
-}
-
-function setup() {
-    bio = document.getElementById("bio");
-    bio_margin = document.getElementById("bio-margin");
-    name_elem = document.getElementById("name");
-    name_margin = document.getElementById("name-margin");
-    links = document.getElementsByClassName("link");
-    projects = document.getElementsByClassName("project");
-
-    // element, desktop class, mobile class
-    class_pairs = [[bio_margin, "col-5", "col-1"],
-                   [bio, "col-5", "col-10"], 
-                   [bio, "mt-0", "mt-4"],
-                   [name_margin, "col-2", "col-1"],
-                   [name_elem, "mr-5", "mr-0"],
-                   [name_elem, "col-3", "col-10"],
-                   [name_elem, "text-right", "text-center"]];
-
-    adjust_main();
-}
-
-function adjust_main() {
-    if (window.innerWidth <= MIN_SIZE) {
-        for (let pair of class_pairs) {
-            toggle_class(pair[0], pair[2], pair[1]);
-        }
-        for (let item of links) {
-            toggle_class(item, "col-2", "col-1");
-        }
-        for (let project of projects) {
-            toggle_class(project, "col-12", "col-4")
-        }
+function adjust() {
+    if ($(window).width() <= MID_SIZE) {
+        $('#bio-margin').addClass('col-1').removeClass('col-5');
+        $('#bio').addClass('col-10').removeClass('col-5')
+                 .addClass('mt-4').removeClass('mt-0');
+        $('#name-margin').addClass('col-1').removeClass('col-2');
+        $('#name').addClass('col-10').removeClass('col-3')
+                  .addClass('mr-0').removeClass('mr-5')
+                  .addClass('text-center').removeClass('text-right');
+        $('.link').addClass('col-2').removeClass('col-1');
     } else {
-        for (let pair of class_pairs) {
-            toggle_class(pair[0], pair[1], pair[2]);
-        }
-        for (let item of links) {
-            toggle_class(item, "col-1", "col-2");
-        }
-        for (let project of projects) {
-            toggle_class(project, "col-4", "col-12")
-        }
+        $('#bio-margin').addClass('col-5').removeClass('col-1');
+        $('#bio').addClass('col-5').removeClass('col-10')
+                 .addClass('mt-0').removeClass('mt-4');
+        $('#name-margin').addClass('col-2').removeClass('col-1');
+        $('#name').addClass('col-3').removeClass('col-10')
+                  .addClass('mr-5').removeClass('mr-0')
+                  .addClass('text-right').removeClass('text-center');
+        $('.link').addClass('col-1').removeClass('col-2');
+    }
+
+    adjust_projects();
+}
+
+function adjust_projects() {
+    if ($(window).width() <= MIN_SIZE) {
+        $('.project').each(function(index) {
+            $(this).addClass('col-12').removeClass('col-4').removeClass('col-6');
+            $(this).css('margin-top', '0px');
+        });
+    } else if ($(window).width() <= MID_SIZE) {
+        $('.project').each(function(index) {
+            $(this).addClass('col-6').removeClass('col-4').removeClass('col-12');
+            $(this).css('margin-top', `${index % 2 * PROJECT_STAGGER}px`);
+        });
+    } else {
+        $('.project').each(function(index) {
+            $(this).addClass('col-4').removeClass('col-6').removeClass('col-12');
+            $(this).css('margin-top', `${index % 3 * PROJECT_STAGGER}px`);
+        });
     }
 }
 
-function toggle_class(elem, on, off) {
-    elem.classList.remove(off)
-    elem.classList.add(on)
-}
+$(document).ready(function() {
+    adjust();
+    $(window).resize(function() {
+        adjust();
+    });
+
+    $('#arrow').click(function() {
+        $('body').animate({
+          scrollTop: $('#portfolio-main').offset().top - 50
+        }, 500);
+        console.log('asdf')
+    })
+});
+
 
 function rotateCard(container){
     if(container.classList.contains('flipped')){
-        container.classList.remove('flipped')
+        container.classList.remove('flipped');
     } else {
-        container.classList.add('flipped')
+        container.classList.add('flipped');
     }
 }
-
-window.onload = setup;
-window.onresize = adjust_main;

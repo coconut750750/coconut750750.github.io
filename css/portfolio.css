@@ -1,5 +1,5 @@
 #portfolio-main {
-    margin-top: 5vh;
+    margin-top: 100vh;
 }
 
 .project-img {
@@ -25,4 +25,5 @@
 
 #portfolio-back {
     font-size: 32px;
+    color: #000;
 }

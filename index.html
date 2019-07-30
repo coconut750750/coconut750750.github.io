@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/portfolio.css">
     <link rel="stylesheet" type="text/css" href="css/card.css">
+    <link rel="stylesheet" type="text/css" href="css/arrow-bounce.css">
 
     <script src="js/portfolio-controller.js"></script>
     <script src="js/content-control.js"></script>
@@ -37,7 +39,6 @@
                 Hi! I'm studying at the University of Illinois at Urbana-Champaign, pursuing Computer Science in the College of Engineering. I worked at <a href="https://www.cmegroup.com">CME Group</a> and <a href="https://dl.acm.org/citation.cfm?id=3084455">researched at the University of Iowa</a>.
             </p>
         </div>
-        <br><br><br>
         <div class="row justify-content-center">
             <div class="col-1 text-center link">
                 <a href="https://github.com/coconut750750" class="fab fa-github"></a>
@@ -51,18 +52,16 @@
             <div class="col-1 text-center link">
                 <a href="resume.pdf" class="fa fa-file-alt"></a>
             </div>
-            <div class="col-1 text-center link">
-                <a href="" onclick="show_portfolio()" class="fa fa-folder-open content-toggle"></a>
-            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+        <div class="row justify-content-center">
+            <i id="arrow"></i>
         </div>
     </div>
 
-    <div id="portfolio-main" class="container-fluid" ng-controller="portfolio-controller" style="display: none;">
-        <div class="col-1 ml-3"><a href="" onclick="show_home()" id="portfolio-back" class="material-icons content-toggle">arrow_back</a></div>
-        <h3 class="header text-center mb-4">Projects</h3>
-
+    <div id="portfolio-main" class="container-fluid" ng-controller="portfolio-controller">
         <div ng-repeat="project in projects" class="mx-auto">
-            <div class="project card-container" style="float:left;" onclick="rotateCard(this)">
+            <div class="project card-container" style="float: left;" onclick="rotateCard(this)">
                 <div class="card">
                     <div class="front">
                         <img ng-if="project.img_src" class="card-img-top" src="{{ project.img_src }}"/>
