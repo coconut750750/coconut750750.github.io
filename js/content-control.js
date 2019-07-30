@@ -1,8 +1,15 @@
+var MOBILE_SIZE = 500;
 var MIN_SIZE = 700;
 var MID_SIZE = 1000;
 var PROJECT_STAGGER = 25;
 
 function adjust() {
+    if ($(window).width() <= MOBILE_SIZE) {
+        $('#bio').css('font-size', '12px');
+    } else {
+        $('#bio').css('font-size', '16px');
+    }
+
     if ($(window).width() <= MID_SIZE) {
         $('#bio-margin').addClass('col-1').removeClass('col-5');
         $('#bio').addClass('col-10').removeClass('col-5')
@@ -52,10 +59,9 @@ $(document).ready(function() {
     });
 
     $('#arrow').click(function() {
-        $('body').animate({
+        $('html, body').animate({
           scrollTop: $('#portfolio-main').offset().top - 50
         }, 500);
-        console.log('asdf')
     })
 });
 
