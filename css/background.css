@@ -1,23 +1,46 @@
 #background {
-    top: -500px;
-    left: 500px;
-    border-bottom: 1500px solid #64b5f6; /* dictates the length and top of the stripe */
-    border-left: 150px solid transparent; /* dictates the angle of the top */
-    border-right: 10px solid transparent; /* dictates the angle of the bottom */
-    height: 0;
-    width: 400px; /* dictates the height of the stripe */
-    position: fixed;
-    transform: rotate(80deg);
-    animation: seasaw 5s infinite;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: #64b5f6;
 }
 
-@keyframes seasaw {
+#top-trap {
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  border-left: 100vw solid white;
+  animation: top-seasaw 6s infinite;
+}
+
+#bot-trap {
+  left: 0px;
+  position: fixed;
+  border-right: 100vw solid white;
+  height: 50vh;
+  animation: bot-seasaw 4s infinite;
+}
+
+@keyframes top-seasaw {
   0%, 100% {
-    border-left: 150px solid transparent;
-    transform: rotate(80deg);
+    border-bottom: 20px solid transparent;
+    height: 26vh;
   }
   50% {
-    border-left: 155px solid transparent;
-    transform: rotate(81deg);
+    border-bottom: 30px solid transparent;
+    height: 27vh;
+  }
+}
+
+@keyframes bot-seasaw {
+  0%, 100% {
+    border-top: 100px solid transparent;
+    top: 55vh;
+  }
+  50% {
+    border-top: 90px solid transparent;
+    top: 56vh;
   }
 }

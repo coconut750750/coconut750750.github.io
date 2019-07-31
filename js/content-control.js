@@ -34,7 +34,6 @@ function adjust() {
     }
 
     adjust_projects();
-    adjust_background();
 }
 
 function adjust_projects() {
