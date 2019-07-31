@@ -1,5 +1,7 @@
 #portfolio-main {
-    margin-top: 25vh;
+    margin-top: 100vh;
+    position: absolute;
+    top: 0;
 }
 
 .project {
