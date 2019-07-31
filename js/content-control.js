@@ -3,6 +3,9 @@ var MIN_SIZE = 700;
 var MID_SIZE = 1000;
 var PROJECT_STAGGER = 25;
 
+var MID_HEIGHT = 700;
+var MID_TOP = -500;
+
 function adjust() {
     if ($(window).width() <= MOBILE_SIZE) {
         $('#bio').css('font-size', '12px');
@@ -21,7 +24,7 @@ function adjust() {
         $('.link').addClass('col-2').removeClass('col-1');
     } else {
         $('#bio-margin').addClass('col-5').removeClass('col-1');
-        $('#bio').addClass('col-5').removeClass('col-10')
+        $('#bio').addClass('col-4').removeClass('col-10')
                  .addClass('mt-0').removeClass('mt-4');
         $('#name-margin').addClass('col-2').removeClass('col-1');
         $('#name').addClass('col-3').removeClass('col-10')
@@ -31,6 +34,7 @@ function adjust() {
     }
 
     adjust_projects();
+    adjust_background();
 }
 
 function adjust_projects() {
@@ -50,6 +54,12 @@ function adjust_projects() {
             $(this).css('margin-top', `${index % 3 * PROJECT_STAGGER}px`);
         });
     }
+}
+
+function adjust_background() {
+    var heightDiff = MID_HEIGHT - $(window).height();
+    var newTop = MID_TOP - heightDiff / 3;
+    $('#background').css('top', `${newTop}px`);
 }
 
 $(document).ready(function() {

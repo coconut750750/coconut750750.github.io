@@ -1,5 +1,33 @@
 #portfolio-main {
-    margin-top: 100vh;
+    margin-top: 25vh;
+}
+
+.project {
+    transform: translateY(0px);
+    animation: drop 0.25s linear;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.project:hover {
+    transform: translateY(-8px);
+    animation: rise 0.25s linear;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
 }
 
 .project-img {
@@ -21,9 +49,4 @@
 
 .card-body a.btn-link {
     margin-right: 5%;
-}
-
-#portfolio-back {
-    font-size: 32px;
-    color: #000;
 }
