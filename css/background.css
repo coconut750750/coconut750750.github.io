@@ -1,46 +1,58 @@
 #background {
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  background-color: #64b5f6;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: #64b5f6;
 }
 
 #top-trap {
-  top: 0px;
-  left: 0px;
-  position: fixed;
-  border-left: 100vw solid white;
-  animation: top-seasaw 6s infinite;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    border-left: 100vw solid white;
+    animation: topseasaw 6s infinite;
+
+    border-bottom: 20px solid transparent;
+    height: 26vh;
 }
 
 #bot-trap {
-  left: 0px;
-  position: fixed;
-  border-right: 100vw solid white;
-  height: 50vh;
-  animation: bot-seasaw 4s infinite;
-}
+    left: 0px;
+    position: fixed;
+    border-right: 100vw solid white;
+    height: 50vh;
+    animation: botseasaw 4s infinite;
 
-@keyframes top-seasaw {
-  0%, 100% {
-    border-bottom: 20px solid transparent;
-    height: 26vh;
-  }
-  50% {
-    border-bottom: 30px solid transparent;
-    height: 27vh;
-  }
-}
-
-@keyframes bot-seasaw {
-  0%, 100% {
     border-top: 100px solid transparent;
     top: 55vh;
-  }
-  50% {
-    border-top: 90px solid transparent;
-    top: 56vh;
-  }
+}
+
+@keyframes topseasaw {
+
+    0%,
+    100% {
+        border-bottom: 20px solid transparent;
+        height: 26vh;
+    }
+
+    50% {
+        border-bottom: 30px solid transparent;
+        height: 27vh;
+    }
+}
+
+@keyframes botseasaw {
+
+    0%,
+    100% {
+        border-top: 100px solid transparent;
+        top: 55vh;
+    }
+
+    50% {
+        border-top: 90px solid transparent;
+        top: 56vh;
+    }
 }

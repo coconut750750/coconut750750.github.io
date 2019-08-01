@@ -1,3 +1,5 @@
+@import url('./card.css');
+
 #portfolio-main {
     margin-top: 100vh;
     position: absolute;
