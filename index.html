@@ -64,21 +64,23 @@
     <div id="portfolio-main" class="container-fluid" ng-controller="portfolio-controller">
         <div ng-repeat="project in projects" class="mx-auto">
             <div class="project card-container" style="float: left;" onclick="rotateCard(this)">
-                <div class="card">
-                    <div class="front">
-                        <img ng-if="project.img_src" class="card-img-top" src="{{ project.img_src }}"/>
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">{{ project.name }}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">{{ project.brief }}</h6>
-                            <!-- <p class="card-subtitle mb-2 text-muted">{{ project.time_frame }}</p> -->
-                        </div>
-                    </div> 
+                <div class="card-outer">
+                    <div class="card">
+                        <div class="front">
+                            <img ng-if="project.img_src" class="card-img-top" src="{{ project.img_src }}"/>
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">{{ project.name }}</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">{{ project.brief }}</h6>
+                                <!-- <p class="card-subtitle mb-2 text-muted">{{ project.time_frame }}</p> -->
+                            </div>
+                        </div> 
 
-                    <div class="back">
-                        <div class="card-body">
-                            <p class="card-text" style="font-size: 2vh;">{{ project.description }}</p>
-                            <a ng-if="project.source" href="{{ project.source }}" target="_blank" class="card-text btn btn-link" role="button">Source</a>
-                            <a ng-if="project.link" href="{{ project.link }}" target="_blank" class="card-text btn btn-link" role="button">Link</a>
+                        <div class="back">
+                            <div class="card-body">
+                                <p class="card-text" style="font-size: 14px;">{{ project.description }}</p>
+                                <a ng-if="project.source" href="{{ project.source }}" target="_blank" class="card-text btn btn-link" role="button">Source</a>
+                                <a ng-if="project.link" href="{{ project.link }}" target="_blank" class="card-text btn btn-link" role="button">Link</a>
+                            </div>
                         </div>
                     </div>
                 </div>
