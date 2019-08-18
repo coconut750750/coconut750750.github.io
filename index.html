@@ -63,9 +63,9 @@
 
     <div id="portfolio-main" class="container-fluid" ng-controller="portfolio-controller">
         <div ng-repeat="project in projects" class="mx-auto">
-            <div class="project card-container" style="float: left;" onclick="rotateCard(this)">
+            <div class="project card-container" style="float: left;">
                 <div class="card-outer">
-                    <div class="card">
+                    <div class="card" onclick="rotateCard(this)">
                         <div class="front">
                             <img ng-if="project.img_src" class="card-img-top" src="{{ project.img_src }}"/>
                             <div class="card-body">

@@ -30,7 +30,7 @@
     object-fit: cover;
 }
 
-.card-container.flipped .card {
+.card-container .flipped {
     transform: rotateY(180deg);
 }
 
