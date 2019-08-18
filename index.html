@@ -38,7 +38,7 @@
         <div class="row">
             <div id="bio-margin"></div>
             <p id="bio" class="text-justify">
-                Hi! I'm studying at the University of Illinois at Urbana-Champaign, pursuing Computer Science in the College of Engineering. I worked at <a href="https://www.cmegroup.com">CME Group</a> and <a href="https://dl.acm.org/citation.cfm?id=3084455">researched at the University of Iowa</a>.
+                I'm studying Computer Science at the University of Illinois at Urbana-Champaign. I have interned at <a href="https://stripe.com">Stripe</a>, <a href="https://www.cmegroup.com">CME Group</a>, and have <a href="https://dl.acm.org/citation.cfm?id=3084455">researched at the University of Iowa</a>.
             </p>
         </div>
         <div class="row justify-content-center">
@@ -70,15 +70,15 @@
                         <div class="card-body">
                             <h5 class="card-title mb-2">{{ project.name }}</h5>
                             <h6 class="card-subtitle mb-2 text-muted">{{ project.brief }}</h6>
-                            <p class="card-subtitle mb-2 text-muted">{{ project.time_frame }}</p>
+                            <!-- <p class="card-subtitle mb-2 text-muted">{{ project.time_frame }}</p> -->
                         </div>
                     </div> 
 
                     <div class="back">
                         <div class="card-body">
                             <p class="card-text" style="font-size: 2vh;">{{ project.description }}</p>
-                            <a ng-if="project.source" href="{{ project.source }}" class="card-text btn btn-link" role="button">Source</a>
-                            <a ng-if="project.link" href="{{ project.link }}" class="card-text btn btn-link" role="button">Link</a>
+                            <a ng-if="project.source" href="{{ project.source }}" target="_blank" class="card-text btn btn-link" role="button">Source</a>
+                            <a ng-if="project.link" href="{{ project.link }}" target="_blank" class="card-text btn btn-link" role="button">Link</a>
                         </div>
                     </div>
                 </div>

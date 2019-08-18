@@ -4,11 +4,16 @@
     margin-top: 100vh;
     position: absolute;
     top: 0;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .project {
     transform: translateY(0px);
     animation: drop 0.25s linear;
+
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 @keyframes drop {
