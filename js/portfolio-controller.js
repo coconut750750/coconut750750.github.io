@@ -4,9 +4,9 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
     {
         name: 'imusi',
         brief: 'Music Recommendation',
-        description: 'A Web and Mobile app that recommends music to users based on an uploaded image. The algorithm\
+        description: 'A full stack app that recommends music to users based on an uploaded image. imusi\
                       recommends music that have similar features to an image. Some features include the \'liveliness\' and\
-                      tempo of the music, which map to the temperature and vibrance of the image.',
+                      tempo, which map to the image\'s temperature and vibrance.',
         time_frame: 'Nov 2018',
         img_src: 'img/imusi.png',
         source: 'https://github.com/choiboy98/imusi',
@@ -14,10 +14,9 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
     }, {
         name: 'Waffle',
         brief: 'ReactJS Application',
-        description: 'An application that helps indecisive users choose where to eat by ranking restaurants\
-                      in a customized competition loosely similar to an ordinary bracket-style tournament. Users\
-                      pick a restaurant between several pairs until a clear winner has been reached. Aims to gamify\
-                      the dread of picking a restaurant.',
+        description: 'A web app that helps indecisive users choose where to eat by ranking restaurants\
+                      in a competition similar to a bracket-style tournament. Users\
+                      pick a restaurant between several pairs until there is a clear winner.',
         time_frame: 'Aug 2018',
         img_src: 'img/waffle.png',
         link: 'https://waaffle.herokuapp.com'
@@ -41,7 +40,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
     }, {
         name: 'PokAI',
         brief: 'Card Playing AI',
-        description: 'Written in Python, PokAI is an AI that plays the Chinese card game Landlard.\
+        description: 'PokAI is an AI that plays the Chinese card game Landlard.\
                       PokAI determines the best move by running Monte Carlo simularions. Compared to\
                       a fixed-strategy bot, PokAI can win about 60% more games with the same starting hand.',
         time_frame: 'Feb 2018 - Jul 2018',
