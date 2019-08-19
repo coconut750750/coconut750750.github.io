@@ -67,11 +67,11 @@ $(document).ready(function() {
         adjust();
     });
 
-    $('#arrow').click(function() {
+    $('#arrow-click').click(function() {
         $('html, body').animate({
           scrollTop: $('#portfolio-main').offset().top - 50
         }, 500);
-    })
+    });
 });
 
 
