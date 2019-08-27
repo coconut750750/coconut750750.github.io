@@ -2,6 +2,14 @@ var app = angular.module("portfolio", []);
 app.controller('portfolio-controller', ['$scope', function($scope) {
     $scope.projects = [
     {
+        name: 'Lane',
+        brief: 'Photo Collection',
+        description: 'A mobile app written in React Native that aims to remind users of old photos collections. Lane displays a\
+                      monthly calendar to present all photos with an anniversary in that month,\
+                      giving users an easy interface to explore past photos.',
+        time_frame: 'May 2019 - Jul 2019',
+        img_src: 'img/lane.gif',
+    }, {
         name: 'imusi',
         brief: 'Music Recommendation',
         description: 'A full stack app that recommends music to users based on an uploaded image. imusi\
@@ -21,14 +29,6 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
         img_src: 'img/waffle.png',
         link: 'https://waaffle.herokuapp.com'
     }, {
-        name: 'Out of Ammo',
-        brief: 'Infinite Runner',
-        description: 'Simple geometric infinite runner where you only have one bullet that bounces around the map.\
-                      Implements object pooling and procedural generation to create the map.',
-        time_frame: 'Aug 2018',
-        img_src: 'img/outofammo.png',
-        link: 'https://out-of-ammo.herokuapp.com/'
-    // }, {
     //     name: 'Shapify',
     //     brief: 'Recreating Images with Polygons',
     //     description: 'Given any image, Shapify uses the structure of genetic algorithms, seed, weed, breed, and mutate\
@@ -37,7 +37,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
     //     time_frame: 'Jul 2018 - Sept 2018',
     //     img_src: '',
     //     source: 'https://github.com/coconut750750/shapify'
-    }, {
+    // }, {
         name: 'PokAI',
         brief: 'Card Playing AI',
         description: 'PokAI is an AI that plays the Chinese card game Landlard.\
@@ -46,6 +46,14 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
         time_frame: 'Feb 2018 - Jul 2018',
         img_src: 'img/pokai.png',
         source: 'https://github.com/coconut750750/pokai'
+    }, {
+        name: 'Out of Ammo',
+        brief: 'Infinite Runner',
+        description: 'Simple geometric infinite runner where you only have one bullet that bounces around the map.\
+                      Implements object pooling and procedural generation to create the map.',
+        time_frame: 'Aug 2018',
+        img_src: 'img/outofammo.png',
+        link: 'https://out-of-ammo.herokuapp.com/'
     }, {
         name: 'Heist',
         brief: '2D Adventure Game',
