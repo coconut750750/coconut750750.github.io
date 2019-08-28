@@ -30,7 +30,6 @@
 }
 
 @keyframes topseasaw {
-
     0%,
     100% {
         border-bottom: 20px solid transparent;
@@ -38,13 +37,12 @@
     }
 
     50% {
-        border-bottom: 30px solid transparent;
-        height: 27vh;
+        border-bottom: 40px solid transparent;
+        height: 28vh;
     }
 }
 
 @keyframes botseasaw {
-
     0%,
     100% {
         border-top: 100px solid transparent;
@@ -52,7 +50,7 @@
     }
 
     50% {
-        border-top: 90px solid transparent;
-        top: 56vh;
+        border-top: 80px solid transparent;
+        top: 57vh;
     }
 }
