@@ -2,6 +2,15 @@ var app = angular.module("portfolio", []);
 app.controller('portfolio-controller', ['$scope', function($scope) {
     $scope.projects = [
     {
+        name: 'Forty',
+        brief: 'Multiplayer Card Game',
+        description: 'An interactive multiplayer card game based off the popular trick-taking game forty points.\
+                     Forty uses socket.io for bidirectional communication between players to maintain an real-time\
+                     setting.',
+        time_frame: 'Aug - Sept 2019',
+        img_src: 'img/forty.gif',
+        link: 'https://fortypoints.herokuapp.com',
+    }, {
         name: 'Lane',
         brief: 'Photo Collection',
         description: 'A mobile app written in React Native that aims to remind users of old photos collections. Lane displays a\
