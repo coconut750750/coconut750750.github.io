@@ -38,7 +38,7 @@
 
     50% {
         border-bottom: 40px solid transparent;
-        height: 28vh;
+        height: 30vh;
     }
 }
 
@@ -50,7 +50,7 @@
     }
 
     50% {
-        border-top: 80px solid transparent;
-        top: 57vh;
+        border-top: 60px solid transparent;
+        top: 60vh;
     }
 }
