@@ -9,8 +9,8 @@
 }
 
 .project {
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 
 .project-img {
@@ -32,4 +32,8 @@
 
 .card-body a.btn-link {
     margin-right: 5%;
+}
+
+.card-body p {
+    font-size: 14px;
 }

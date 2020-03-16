@@ -79,9 +79,9 @@
 
                         <div class="back">
                             <div class="card-body">
-                                <p class="card-text" style="font-size: 14px;">{{ project.description }}</p>
-                                <a ng-if="project.source" href="{{ project.source }}" target="_blank" class="card-text btn btn-link" role="button">Source</a>
-                                <a ng-if="project.link" href="{{ project.link }}" target="_blank" class="card-text btn btn-link" role="button">Link</a>
+                                <p class="card-text">{{ project.description }}</p>
+                                <a ng-if="project.source" href="{{ project.source }}" target="_blank" class="card-text btn btn-link" role="button"><p>GitHub</p></a>
+                                <a ng-if="project.link" href="{{ project.link }}" target="_blank" class="card-text btn btn-link" role="button"><p>Try It!</p></a>
                             </div>
                         </div>
                     </div>
