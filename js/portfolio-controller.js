@@ -36,7 +36,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
                       pick a restaurant between several pairs until there is a clear winner.',
         time_frame: 'Aug 2018',
         img_src: 'img/waffle.png',
-        link: 'https://waaffle.herokuapp.com'
+        link: 'https://waffle.brandon-wang.me/'
     }, {
     //     name: 'Shapify',
     //     brief: 'Recreating Images with Polygons',
