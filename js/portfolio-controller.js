@@ -62,7 +62,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
                       Implements object pooling and procedural generation to create the map.',
         time_frame: 'Aug 2018',
         img_src: 'img/outofammo.png',
-        link: 'https://out-of-ammo.herokuapp.com/'
+        link: 'https://outofammo.now.sh'
     }, {
         name: 'Heist',
         brief: '2D Adventure Game',
