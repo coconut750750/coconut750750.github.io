@@ -9,7 +9,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
                      setting.',
         time_frame: 'Aug - Sept 2019',
         img_src: 'img/forty.gif',
-        link: 'https://fortypoints.herokuapp.com',
+        link: 'https://forty.brandon-wang.me/',
     }, {
         name: 'Lane',
         brief: 'Photo Collection',
