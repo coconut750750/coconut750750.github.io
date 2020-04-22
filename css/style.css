@@ -1,5 +1,40 @@
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 250ms;
+  transition-delay: 0;
+}
+
 body {
+    --bgcolor: #ffffff;
+    --altbgcolor: #121212;
+    --shapecolor: #64b5f6;
+    --textcolor: #000000;
+    --accentcolor: #e17027;
     font-family: 'Roboto', sans-serif;
+    user-select: none;
+
+    background-color: var(--bgcolor);
+}
+
+body.dark {
+    --bgcolor: #121212;
+    --altbgcolor: #ffffff;
+    --shapecolor: #bb86fc;
+    --textcolor: #ffffff;
+    --accentcolor: #fcbb86;
+    background-color: var(--bgcolor);
+}
+
+body.dark p,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6 {
+    color: var(--textcolor);
 }
 
 #name {
@@ -9,24 +44,4 @@ body {
 
 .header {
     color: white;
-}
-
-.content-toggle {
-    color: white;
-    text-decoration: none;
-}
-
-.content-toggle:hover {
-    color: #e17027;
-    text-decoration: none;
-}
-
-.fa, .fab {
-    color: #fff;
-    font-size: 24px;
-}
-
-.fa:hover, .fab:hover {
-    color: #e17027;
-    text-decoration: none;
 }

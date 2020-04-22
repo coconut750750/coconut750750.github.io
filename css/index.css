@@ -4,20 +4,30 @@
     margin-top: 30vh;
 }
 
-#bio {
-    color: white;
+#home-main p {
+    color: var(--bgcolor);
 }
 
 #bio a {
-    color: white;
+    color: var(--bgcolor);
     text-decoration: none;
 }
 
 #bio a:hover {
-    color: #e17027;
+    color: var(--accentcolor);
     text-decoration: none;
 }
 
-body {
-  user-select: none;
+#home-main .fa, 
+#home-main .fab {
+    color: var(--bgcolor);
+    font-size: 24px;
+    transition: color 250ms !important;
+}
+
+#home-main .fa:hover,
+#home-main .fab:hover {
+    color: var(--accentcolor);
+    text-decoration: none;
+
 }

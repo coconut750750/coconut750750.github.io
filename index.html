@@ -20,16 +20,23 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/portfolio.css">
     <link rel="stylesheet" type="text/css" href="css/arrow-bounce.css">
+    <link rel="stylesheet" type="text/css" href="css/light-dark.css">
 
     <script src="js/portfolio-controller.js"></script>
     <script src="js/content-control.js"></script>
+    <script src="js/light-dark-mode.js"></script>
 </head>
 
-<body ng-app="portfolio">
+<body class="" ng-app="portfolio">
     <div id="background">
         <div id="top-trap"></div>
         <div id="bot-trap"></div>
     </div>
+
+    <div id="light-dark-toggle">
+        <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+    </div>
+
     <div id="home-main" class="container-fluid" >
         <div class="row">
             <div id="name-margin"></div>
@@ -80,8 +87,8 @@
                         <div class="back">
                             <div class="card-body">
                                 <p class="card-text">{{ project.description }}</p>
-                                <a ng-if="project.source" href="{{ project.source }}" target="_blank" class="card-text btn btn-link" role="button"><p>GitHub</p></a>
-                                <a ng-if="project.link" href="{{ project.link }}" target="_blank" class="card-text btn btn-link" role="button"><p>Try It!</p></a>
+                                <a ng-if="project.source" href="{{ project.source }}" target="_blank" class="card-text" role="button">GitHub</a>
+                                <a ng-if="project.link" href="{{ project.link }}" target="_blank" class="card-text" role="button">Try It!</a>
                             </div>
                         </div>
                     </div>

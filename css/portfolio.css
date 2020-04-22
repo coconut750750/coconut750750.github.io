@@ -23,15 +23,16 @@
     padding: 0;
 }
 
-.no-a-style,
-.no-a-style:hover,
-.no-a-style:focus {
-    color: inherit;
+.card-body a {
+    margin-right: 5%;
+    color: var(--textcolor);
     text-decoration: none;
+    font-size: 14px;
 }
 
-.card-body a.btn-link {
-    margin-right: 5%;
+.card-body a:hover {
+    color: var(--accentcolor);
+    text-decoration: none;
 }
 
 .card-body p {
