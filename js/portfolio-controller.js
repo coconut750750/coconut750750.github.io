@@ -2,6 +2,15 @@ var app = angular.module("portfolio", []);
 app.controller('portfolio-controller', ['$scope', function($scope) {
     $scope.projects = [
     {
+        name: 'Pseudonyms',
+        brief: 'Word-based Party Game',
+        description: 'An interactive multiplayer word game based off the popular board game Codenames.\
+                     This project was born during the 2020 quarantine; I was bored and wanted to play with my friends,\
+                     who were all over the globe. Not sure if I had more fun making this or playing it after.',
+        time_frame: 'Apr 2020',
+        img_src: 'img/pseudonyms.gif',
+        link: 'https://pseudonyms.brandon-wang.me/',
+    }, {
         name: 'Forty',
         brief: 'Multiplayer Card Game',
         description: 'An interactive multiplayer card game based off the popular trick-taking game forty points.\
@@ -9,6 +18,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
                      setting.',
         time_frame: 'Aug - Sept 2019',
         img_src: 'img/forty.gif',
+        source: 'https://github.com/coconut750750/forty',
         link: 'https://forty.brandon-wang.me/',
     }, {
         name: 'Lane',
