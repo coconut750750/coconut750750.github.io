@@ -9,7 +9,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
                      who were all over the globe. Not sure if I had more fun making this or playing it after.',
         time_frame: 'Apr 2020',
         img_src: 'img/pseudonyms.gif',
-        link: 'https://pseudonyms.brandon-wang.me/',
+        link: 'https://pseudonyms.brandon-wang.com/',
     }, {
         name: 'Forty',
         brief: 'Multiplayer Card Game',
@@ -19,7 +19,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
         time_frame: 'Aug - Sept 2019',
         img_src: 'img/forty.gif',
         source: 'https://github.com/coconut750750/forty',
-        link: 'https://forty.brandon-wang.me/',
+        link: 'https://forty.brandon-wang.com/',
     }, {
         name: 'Lane',
         brief: 'Photo Collection',
@@ -46,7 +46,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
                       pick a restaurant between several pairs until there is a clear winner.',
         time_frame: 'Aug 2018',
         img_src: 'img/waffle.png',
-        link: 'https://waffle.brandon-wang.me/'
+        link: 'https://waffle.brandon-wang.com/'
     }, {
     //     name: 'Shapify',
     //     brief: 'Recreating Images with Polygons',
