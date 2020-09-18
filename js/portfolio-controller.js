@@ -40,7 +40,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
         link: 'https://imusi.herokuapp.com'
     }, {
         name: 'Waffle',
-        brief: 'ReactJS Application',
+        brief: 'Restaurant Picker',
         description: 'A web app that helps indecisive users choose where to eat by ranking restaurants\
                       in a competition similar to a bracket-style tournament. Users\
                       pick a restaurant between several pairs until there is a clear winner.',
@@ -95,19 +95,19 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
         name: 'Multi-Pong',
         brief: 'Multiplayer Pong Game',
         description: 'A single and multiplayer Pong game that features several different game modes such as\
-                      Monkey-in-the-Middle and Hardcore. Multiplayer games implemented with Bluetooth. Also boasts\
-                      subtle features such as ball shadows and screen shakes.',
+                      Monkey-in-the-Middle and Hardcore. Multiplayer games implemented with Bluetooth. Also includes visual\
+                      effects such as ball shadows and screen shakes.',
         time_frame: 'Nov 2016 - Nov 2017',
         img_src: 'img/pong.png',
         source: 'https://github.com/coconut750750/Pong',
         link: 'https://play.google.com/store/apps/details?id=com.brandon.pong'
-    }, {
-        name: 'Mailbox',
-        brief: 'Messaging App',
-        description: 'A messaging app powered by Firebase\'s real-time database. Features efficient data storage, quick\
-                      access to conversations, and the ability to hide messages. Integrates several material design concepts.',
-        time_frame: 'Jan 2016 - Dec 2017',
-        img_src: 'img/mailbox.png',
-        source: 'https://github.com/coconut750750/Mailbox'
+    // }, {
+    //     name: 'Mailbox',
+    //     brief: 'Messaging App',
+    //     description: 'A messaging app powered by Firebase\'s real-time database. Features efficient data storage, quick\
+    //                   access to conversations, and the ability to hide messages. Integrates several material design concepts.',
+    //     time_frame: 'Jan 2016 - Dec 2017',
+    //     img_src: 'img/mailbox.png',
+    //     source: 'https://github.com/coconut750750/Mailbox'
     }];
 }]);
