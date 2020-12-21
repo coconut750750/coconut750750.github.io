@@ -5,11 +5,28 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
         name: 'Pseudonyms',
         brief: 'Word-based Party Game',
         description: 'An interactive multiplayer word game based off the popular board game Codenames.\
+                     It features the classic, competitve version as well as a collaborative version for smaller groups.\
                      This project was born during the 2020 quarantine; I was bored and wanted to play with my friends,\
                      who were all over the globe. Not sure if I had more fun making this or playing it after.',
-        time_frame: 'Apr 2020',
+        time_frame: 'Apr 2020 - now',
         img_src: 'img/pseudonyms.gif',
         link: 'https://pseudonyms.brandon-wang.com/',
+    }, {
+        name: 'Connoisseurs',
+        brief: 'An Adult Party Game',
+        description: 'A web-based Cards Against Humanity game. It includes many expansion packs and comes with several built-in,\
+                      optional, house rules, like recycling cards. ',
+        time_frame: 'May - Jun 2020',
+        img_src: 'img/connoisseurs.png',
+        link: 'https://connoisseurs.brandon-wang.com/'
+    // }, {
+    //     name: 'Smokescreen',
+    //     brief: 'An HTTP(s) VPN',
+    //     description: 'A VPN client and server written in Python3 for HTTP(s) connections. Users can easily deploy the VPN\
+    //                  server on a remote machine (AWS, Digital Ocean, etc.), and connect to it with the client, which features\
+    //                  a simple tkinter interface.',
+    //     time_frame: 'Jul - Aug 2020',
+    //     source: 'https://github.com/coconut750750/smokescreen',
     }, {
         name: 'Forty',
         brief: 'Multiplayer Card Game',
@@ -20,14 +37,14 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
         img_src: 'img/forty.gif',
         source: 'https://github.com/coconut750750/forty',
         link: 'https://forty.brandon-wang.com/',
-    }, {
-        name: 'Lane',
-        brief: 'Photo Collection',
-        description: 'A mobile app written in React Native that aims to remind users of old photos collections. Lane displays a\
-                      monthly calendar to present all photos with an anniversary in that month,\
-                      giving users an easy interface to explore past photos.',
-        time_frame: 'May 2019 - Jul 2019',
-        img_src: 'img/lane.gif',
+    // }, {
+    //     name: 'Lane',
+    //     brief: 'Photo Collection',
+    //     description: 'A mobile app written in React Native that aims to remind users of old photos collections. Lane displays a\
+    //                   monthly calendar to present all photos with an anniversary in that month,\
+    //                   giving users an easy interface to explore past photos.',
+    //     time_frame: 'May 2019 - Jul 2019',
+    //     img_src: 'img/lane.gif',
     }, {
         name: 'imusi',
         brief: 'Music Recommendation',
@@ -47,7 +64,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
         time_frame: 'Aug 2018',
         img_src: 'img/waffle.png',
         link: 'https://waffle.brandon-wang.com/'
-    }, {
+    // }, {
     //     name: 'Shapify',
     //     brief: 'Recreating Images with Polygons',
     //     description: 'Given any image, Shapify uses the structure of genetic algorithms, seed, weed, breed, and mutate\
@@ -57,14 +74,14 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
     //     img_src: '',
     //     source: 'https://github.com/coconut750750/shapify'
     // }, {
-        name: 'PokAI',
-        brief: 'Card Playing AI',
-        description: 'PokAI is an AI that plays the Chinese card game Landlard.\
-                      PokAI determines the best move by running Monte Carlo simularions. Compared to\
-                      a fixed-strategy bot, PokAI can win about 60% more games with the same starting hand.',
-        time_frame: 'Feb 2018 - Jul 2018',
-        img_src: 'img/pokai.png',
-        source: 'https://github.com/coconut750750/pokai'
+        // name: 'PokAI',
+        // brief: 'Card Playing AI',
+        // description: 'PokAI is an AI that plays the Chinese card game Landlard.\
+        //               PokAI determines the best move by running Monte Carlo simularions. Compared to\
+        //               a fixed-strategy bot, PokAI can win about 60% more games with the same starting hand.',
+        // time_frame: 'Feb 2018 - Jul 2018',
+        // img_src: 'img/pokai.png',
+        // source: 'https://github.com/coconut750750/pokai'
     }, {
         name: 'Out of Ammo',
         brief: 'Infinite Runner',
@@ -82,25 +99,25 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
         time_frame: 'Jan 2018 - Aug 2018',
         img_src: 'img/heist.png',
         source: 'https://github.com/coconut750750/Heist'
-    }, {
-        name: 'Peek',
-        brief: 'Image Sharing',
-        description: 'A social media platform where users can share images and keep track of where the picture what taken\
-                      as well as some image tags. Images are presented to the users on a map, so users can explore new photos\
-                      by browsing an area on the map.',
-        time_frame: 'Nov 2017 - Dec 2017',
-        img_src: 'img/peek.png',
-        source: 'https://github.com/coconut750750/Peek'
-    }, {
-        name: 'Multi-Pong',
-        brief: 'Multiplayer Pong Game',
-        description: 'A single and multiplayer Pong game that features several different game modes such as\
-                      Monkey-in-the-Middle and Hardcore. Multiplayer games implemented with Bluetooth. Also includes visual\
-                      effects such as ball shadows and screen shakes.',
-        time_frame: 'Nov 2016 - Nov 2017',
-        img_src: 'img/pong.png',
-        source: 'https://github.com/coconut750750/Pong',
-        link: 'https://play.google.com/store/apps/details?id=com.brandon.pong'
+    // }, {
+    //     name: 'Peek',
+    //     brief: 'Image Sharing',
+    //     description: 'A social media platform where users can share images and keep track of where the picture what taken\
+    //                   as well as some image tags. Images are presented to the users on a map, so users can explore new photos\
+    //                   by browsing an area on the map.',
+    //     time_frame: 'Nov 2017 - Dec 2017',
+    //     img_src: 'img/peek.png',
+    //     source: 'https://github.com/coconut750750/Peek'
+    // }, {
+    //     name: 'Multi-Pong',
+    //     brief: 'Multiplayer Pong Game',
+    //     description: 'A single and multiplayer Pong game that features several different game modes such as\
+    //                   Monkey-in-the-Middle and Hardcore. Multiplayer games implemented with Bluetooth. Also includes visual\
+    //                   effects such as ball shadows and screen shakes.',
+    //     time_frame: 'Nov 2016 - Nov 2017',
+    //     img_src: 'img/pong.png',
+    //     source: 'https://github.com/coconut750750/Pong',
+    //     link: 'https://play.google.com/store/apps/details?id=com.brandon.pong'
     // }, {
     //     name: 'Mailbox',
     //     brief: 'Messaging App',
