@@ -2,6 +2,15 @@ var app = angular.module("portfolio", []);
 app.controller('portfolio-controller', ['$scope', function($scope) {
     $scope.projects = [
     {
+        name: 'Mahjong',
+        brief: 'Four-player Chinese Tile Game',
+        description: 'An online multiplayer Chinese Mahjong game for four players. The objective of the game is to\
+                     get a hand with four sets of three and a pair. This app features an elegant drag and drop user\
+                     interface and multiple orientation options, list and circle view, for mobile support.',
+        time_frame: 'Jan 2021 - now',
+        img_src: 'img/mj.png',
+        link: 'https://mj.brandon-wang.com/',
+    }, {
         name: 'Pseudonyms',
         brief: 'Word-based Party Game',
         description: 'An interactive multiplayer word game based off the popular board game Codenames.\
