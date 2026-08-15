@@ -2,9 +2,18 @@ var app = angular.module("portfolio", []);
 app.controller('portfolio-controller', ['$scope', function($scope) {
     $scope.projects = [
     {
+        name: 'Finding Friends',
+        brief: 'Trick-Taking Card Game',
+        description: 'The popular Chinese trick-taking game also known as Shengji or Tractor.\
+                     Play with up to 12 players and 6 decks. Or, play against some heuristic-based\
+                     AI players.',
+        time_frame: 'Apr 2026 - now',
+        img_src: 'img/finding_friends.png',
+        link: 'https://finding-friends.brandon-wang.com/',
+    }, {
         name: 'Encrypto',
         brief: 'Code-Deciphering Word Game',
-        description: 'An online multiplayer word game for 4+ players. Over the course of the game, you will\
+        description: 'A word game for 4+ players. Over the course of the game, you will\
                      encode and decode secret codes for your teammates given a shared key phrase, while\
                      attempting to intercept your opponent\'s secret codes.',
         time_frame: 'Apr 2026 - now',
@@ -13,7 +22,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
     }, {
         name: 'Mahjong',
         brief: 'Four-player Chinese Tile Game',
-        description: 'An online multiplayer Chinese Mahjong game for four players. The objective of the game is to\
+        description: 'The classic Chinese Mahjong game for four players. The objective of the game is to\
                      get a hand with four sets of three and a pair. This app features an elegant drag and drop user\
                      interface and multiple orientation options, list and circle view, for mobile support.',
         time_frame: 'Jan 2021 - now',
@@ -27,7 +36,7 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
                      This project was born during the 2020 quarantine; I was bored and wanted to play with my friends,\
                      who were all over the globe. Not sure if I had more fun making this or playing it after.',
         time_frame: 'Apr 2020 - now',
-        img_src: 'img/pseudonyms.gif',
+        img_src: 'img/pseudonyms.png',
         link: 'https://pseudonyms.brandon-wang.com/',
     }, {
         name: 'Connoisseurs',
@@ -45,16 +54,16 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
     //                  a simple tkinter interface.',
     //     time_frame: 'Jul - Aug 2020',
     //     source: 'https://github.com/coconut750750/smokescreen',
-    }, {
-        name: 'Forty',
-        brief: 'Multiplayer Card Game',
-        description: 'An interactive multiplayer card game based off the popular trick-taking game forty points.\
-                     Forty uses socket.io for bidirectional communication between players to maintain an real-time\
-                     setting.',
-        time_frame: 'Aug - Sept 2019',
-        img_src: 'img/forty.gif',
-        source: 'https://github.com/coconut750750/forty',
-        link: 'https://forty.brandon-wang.com/',
+    // }, {
+    //     name: 'Forty',
+    //     brief: 'Multiplayer Card Game',
+    //     description: 'An interactive multiplayer card game based off the popular trick-taking game forty points.\
+    //                  Forty uses socket.io for bidirectional communication between players to maintain an real-time\
+    //                  setting.',
+    //     time_frame: 'Aug - Sept 2019',
+    //     img_src: 'img/forty.gif',
+    //     source: 'https://github.com/coconut750750/forty',
+    //     link: 'https://forty.brandon-wang.com/',
     // }, {
     //     name: 'Lane',
     //     brief: 'Photo Collection',
@@ -63,16 +72,16 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
     //                   giving users an easy interface to explore past photos.',
     //     time_frame: 'May 2019 - Jul 2019',
     //     img_src: 'img/lane.gif',
-    }, {
-        name: 'imusi',
-        brief: 'Music Recommendation',
-        description: 'A full stack app that recommends music to users based on an uploaded image. imusi\
-                      recommends music that have similar features to an image. Some features include the \'liveliness\' and\
-                      tempo, which map to the image\'s temperature and vibrance.',
-        time_frame: 'Nov 2018',
-        img_src: 'img/imusi.png',
-        source: 'https://github.com/choiboy98/imusi',
-        link: 'https://imusi.herokuapp.com'
+    // }, {
+    //     name: 'imusi',
+    //     brief: 'Music Recommendation',
+    //     description: 'A full stack app that recommends music to users based on an uploaded image. imusi\
+    //                   recommends music that have similar features to an image. Some features include the \'liveliness\' and\
+    //                   tempo, which map to the image\'s temperature and vibrance.',
+    //     time_frame: 'Nov 2018',
+    //     img_src: 'img/imusi.png',
+    //     source: 'https://github.com/choiboy98/imusi',
+    //     link: 'https://imusi.herokuapp.com'
     }, {
         name: 'Waffle',
         brief: 'Restaurant Picker',
@@ -108,15 +117,15 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
         time_frame: 'Aug 2018',
         img_src: 'img/outofammo.png',
         link: 'https://outofammo.now.sh'
-    }, {
-        name: 'Heist',
-        brief: '2D Adventure Game',
-        description: 'A top-down 8-bit adventure game where the objective is to successfully heist\
-                      valuables. Features autonomous NPC characters that walk around the city based on\
-                      paths generated by a navigation system run on an A* path algorithm.',
-        time_frame: 'Jan 2018 - Aug 2018',
-        img_src: 'img/heist.png',
-        source: 'https://github.com/coconut750750/Heist'
+    // }, {
+    //     name: 'Heist',
+    //     brief: '2D Adventure Game',
+    //     description: 'A top-down 8-bit adventure game where the objective is to successfully heist\
+    //                   valuables. Features autonomous NPC characters that walk around the city based on\
+    //                   paths generated by a navigation system run on an A* path algorithm.',
+    //     time_frame: 'Jan 2018 - Aug 2018',
+    //     img_src: 'img/heist.png',
+    //     source: 'https://github.com/coconut750750/Heist'
     // }, {
     //     name: 'Peek',
     //     brief: 'Image Sharing',
