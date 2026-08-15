@@ -2,6 +2,15 @@ var app = angular.module("portfolio", []);
 app.controller('portfolio-controller', ['$scope', function($scope) {
     $scope.projects = [
     {
+        name: 'Encrypto',
+        brief: 'Code-Deciphering Word Game',
+        description: 'An online multiplayer word game for 4+ players. Over the course of the game, you will\
+                     encode and decode secret codes for your teammates given a shared key phrase, while\
+                     attempting to intercept your opponent\'s secret codes.',
+        time_frame: 'Apr 2026 - now',
+        img_src: 'img/encrypto.png',
+        link: 'https://encrypto.brandon-wang.com/',
+    }, {
         name: 'Mahjong',
         brief: 'Four-player Chinese Tile Game',
         description: 'An online multiplayer Chinese Mahjong game for four players. The objective of the game is to\
