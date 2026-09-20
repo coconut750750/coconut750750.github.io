@@ -2,6 +2,14 @@ var app = angular.module("portfolio", []);
 app.controller('portfolio-controller', ['$scope', function($scope) {
     $scope.projects = [
     {
+        name: 'Read the Room',
+        brief: 'Party Game',
+        description: 'A poll-based party game where you answer polls and test out your ability to\
+                     read your friends.',
+        time_frame: 'Sept 2026 - now',
+        img_src: 'img/readtheroom.png',
+        link: 'https://readtheroom.brandon-wang.com/',
+    }, {
         name: 'Finding Friends',
         brief: 'Trick-Taking Card Game',
         description: 'The popular Chinese trick-taking game also known as Shengji or Tractor.\
@@ -38,14 +46,14 @@ app.controller('portfolio-controller', ['$scope', function($scope) {
         time_frame: 'Apr 2020 - now',
         img_src: 'img/pseudonyms.png',
         link: 'https://pseudonyms.brandon-wang.com/',
-    }, {
-        name: 'Connoisseurs',
-        brief: 'An Adult Party Game',
-        description: 'A web-based Cards Against Humanity game. It includes many expansion packs and comes with several built-in,\
-                      optional, house rules, like recycling cards. ',
-        time_frame: 'May - Jun 2020',
-        img_src: 'img/connoisseurs.png',
-        link: 'https://connoisseurs.brandon-wang.com/'
+    // }, {
+    //     name: 'Connoisseurs',
+    //     brief: 'An Adult Party Game',
+    //     description: 'A web-based Cards Against Humanity game. It includes many expansion packs and comes with several built-in,\
+    //                   optional, house rules, like recycling cards. ',
+    //     time_frame: 'May - Jun 2020',
+    //     img_src: 'img/connoisseurs.png',
+    //     link: 'https://connoisseurs.brandon-wang.com/'
     // }, {
     //     name: 'Smokescreen',
     //     brief: 'An HTTP(s) VPN',
